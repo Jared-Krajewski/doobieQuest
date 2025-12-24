@@ -1,0 +1,14 @@
+{ "columns":43,
+ "image":"Downloads\/Epic RPG World - Village(interiors) V1.2\/assets\/furniture_and_props.png",
+ "imageheight":1248,
+ "imagewidth":1376,
+ "margin":0,
+ "name":"furniture_and_props",
+ "spacing":0,
+ "tilecount":1677,
+ "tiledversion":"1.11.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":"1.10"
+}

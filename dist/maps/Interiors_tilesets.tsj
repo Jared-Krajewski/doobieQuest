@@ -1,0 +1,14 @@
+{ "columns":64,
+ "image":"Interiors_tilesets.png",
+ "imageheight":1696,
+ "imagewidth":2048,
+ "margin":0,
+ "name":"Interiors_tilesets",
+ "spacing":0,
+ "tilecount":3392,
+ "tiledversion":"1.11.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":"1.10"
+}

@@ -1,0 +1,14 @@
+{ "columns":22,
+ "image":"Building_Tiles 32x32.png",
+ "imageheight":384,
+ "imagewidth":704,
+ "margin":0,
+ "name":"Building_Tiles 32x32",
+ "spacing":0,
+ "tilecount":264,
+ "tiledversion":"1.11.2",
+ "tileheight":32,
+ "tilewidth":32,
+ "type":"tileset",
+ "version":"1.10"
+}
