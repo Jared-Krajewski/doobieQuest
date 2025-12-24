@@ -37,6 +37,7 @@ export class BootScene extends Phaser.Scene {
     this.load.image("building_tiles", "/maps/Building_Tiles 32x32.png");
     this.load.image("furniture_and_props", "/maps/furniture_and_props.png");
     this.load.image("dealer", "/maps/dealer.png");
+    this.load.image("alley", "/alley.png");
 
     // Tilemap for store background - using simplified embedded tilesets
     this.load.tilemapTiledJSON("store_map", "/maps/store_simple.tmj");

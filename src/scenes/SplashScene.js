@@ -17,17 +17,17 @@ export class SplashScene extends Phaser.Scene {
     // Add the splash image centered
     const splash = this.add.image(640, 360, "splash");
 
-    // Scale the image to fit nicely (adjust as needed)
+    // Scale the image to fit larger (95% of max size for less padding)
     const scaleX = 1280 / splash.width;
     const scaleY = 720 / splash.height;
-    const scale = Math.min(scaleX, scaleY) * 0.8; // 80% of max size for padding
+    const scale = Math.min(scaleX, scaleY) * 1;
     splash.setScale(scale);
 
     // Add a background bubble for the start text
     const bubbleWidth = 550;
     const bubbleHeight = 50;
     const bubbleX = 640;
-    const bubbleY = 540;
+    const bubbleY = 580;
     const bubble = this.add.graphics();
     bubble.fillStyle(0xf0f0f0, 0.62);
     bubble.fillRoundedRect(

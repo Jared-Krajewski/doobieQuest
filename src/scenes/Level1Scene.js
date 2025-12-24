@@ -14,7 +14,7 @@ export class Level1Scene extends Phaser.Scene {
 
   create() {
     // Current room and level tracking
-    this.currentLevel = 3; // Level 1, 2, or 3
+    this.currentLevel = 1; // Level 1, 2, or 3
     this.currentRoom = { x: 0 }; // Room 0, 1, or 2 within level (changed to x only)
     this.entryDoor = { x: 640, y: 500 }; // Track where player entered room from
     this.roomWidth = 1280;
@@ -301,7 +301,9 @@ export class Level1Scene extends Phaser.Scene {
 
     // Themed background based on level (only for non-crib levels)
     // Keep this BEHIND any tilemap layers so it doesn't cover them.
-    if (this.currentLevel !== 1) {
+    if (this.currentLevel === 3) {
+      this.add.image(640, 360, "alley").setDepth(-20);
+    } else if (this.currentLevel !== 1) {
       this.add
         .rectangle(
           this.roomWidth / 2,

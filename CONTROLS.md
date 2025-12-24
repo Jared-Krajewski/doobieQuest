@@ -1,52 +1,71 @@
-# Doobie Quest - Controls & Changes
 
-## Latest Updates
+# Doobie Quest - Controls & Gameplay Guide
 
-### Canvas & Room Size
-- **Canvas reduced**: 1920x1080 → 1280x720 (more manageable viewing)
-- **Rooms adjusted**: 800x600 → 640x480 (fits better in smaller canvas)
-- **Camera**: Locked to room bounds with HUD overlay
+## Controls
 
-### Keyboard Controls (PRIMARY)
-- **W A S D**: Move up/left/down/right
-- **Arrow Keys**: Alternative movement (secondary)
-- **SPACE**: Melee attack (directional, faces player)
+### Keyboard
+- **W A S D** or **Arrow Keys**: Move up/left/down/right
+- **SPACE**: Melee attack (directional)
 - **SHIFT**: Throw bong boomerang (returns after distance)
 
-### Gamepad Controls (Xbox Controller)
+### Gamepad (Xbox Controller)
 - **Left Stick**: Movement
 - **A Button**: Melee attack
 - **B Button**: Throw bong boomerang
 
-**Note**: Chrome may not detect Bluetooth Xbox controllers properly. If gamepad doesn't work, use keyboard controls (WASD).
+**Note:** If gamepad doesn't work, use keyboard controls. Click the game window to focus.
 
-## Game Features
+## Game Structure
 
-### Room System
-- **Multi-room dungeon**: Navigate through connected rooms via doors
-- **Room 1 (0,0)**: Starting entrance hall with 2 roamers
-- **Room 2 (1,0)**: Combat room with roamers + 3 shooter turrets
-- **Room 3 (2,0)**: Boss/treasure room with police enemies + 4 shooter turrets + big money pile
+- **Three Levels:**
+  1. **The Crib**: Bedroom with roamers, crabs, and obstacles. Find money and the lighter.
+  2. **Corner Store**: Buy rolling papers from the clerk, avoid police, collect money, and dodge hazards.
+  3. **Back Alley**: Reach the dealer with all items, avoid police and rats, and win the game.
+- **Room-based progression**: Each level is divided into rooms. Use doors to advance.
+- **Inventory**: Track money, lighter, papers, doobie, health, and lives.
 
-### Combat
-- **Directional melee**: Attack faces the direction you last moved
-- **Boomerang bong**: Throws in direction, spins, damages enemies, returns to you
-- **Enemy types**:
-  - **Roamers**: Move randomly, 2-3 HP
-  - **Police**: Tougher roamers, 5 HP
-  - **Shooters**: Stationary turrets that fire projectiles at you every 2 seconds, 4-5 HP
+## Enemies & Hazards
 
-### Health & Lives
-- **6 hearts total** (shown in HUD as heart containers)
-- **3 lives** (shown in HUD as "Lives: X")
-- **Heart drops**: Enemies drop hearts when defeated
-- **Respawn**: Lose a life when all hearts depleted, respawn with full hearts
+- **Roamers**: Move randomly, low HP.
+- **Crabs**: Hazard in the crib.
+- **Police**: Patrol in store and alley, deal high damage.
+- **Clerk**: Sells papers in the store (not hostile).
+- **Dealer**: Final NPC in the alley (not hostile).
+- **Shooters**: Stationary turrets (in some rooms).
+- **Rats/Spills**: Environmental hazards in later levels.
 
-### Visual Improvements
-- **Checkerboard floors**: Alternating dark/light tiles
-- **More obstacles**: Tables, pillars, wall barriers for tactical combat
-- **Decorative elements**: Background details in rooms
-- **Enemy variety**: Different sprites for roamer, police, shooter types
+## Combat & Items
+
+- **Melee attack**: Faces last moved direction.
+- **Boomerang bong**: Ranged attack, returns to player.
+- **Collectibles**: Money, lighter, papers, doobie, hearts.
+- **Health**: 6 hearts (12 HP), 3 lives. Lose all hearts to lose a life.
+- **Respawn**: Lose a life, respawn with full health.
+
+## Visuals & Features
+
+- **Tilemap backgrounds**: Themed for each level (crib, store, alley)
+- **Obstacles**: Tables, boxes, shelves, beds, dumpsters, etc.
+- **Decorations**: Background props for immersion
+- **HUD**: Health, lives, inventory always visible
+- **Camera**: Follows player, locked to room bounds
+- **Procedural & custom sprites**: Player, enemies, NPCs, items
+
+## Development & Troubleshooting
+
+- **Start dev server:**
+  ```bash
+  bun run dev
+  # Server runs at http://localhost:5173/ (or next available port)
+  ```
+- **Keyboard not responding?** Click the game window, refresh, or check browser console.
+- **Gamepad not working?** Try USB, or use keyboard.
+- **Canvas too big?** Zoom out in browser.
+
+## Next Steps
+- Add more enemy types and hazards
+- Expand room-based system for all levels
+- Add boss fights and new collectibles
 
 ## Troubleshooting
 
