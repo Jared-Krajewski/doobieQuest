@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import { Logger } from "../utils/Logger.js";
 
 export class BootScene extends Phaser.Scene {
   constructor() {
@@ -41,7 +42,7 @@ export class BootScene extends Phaser.Scene {
 
     // Tilemap for store background - using simplified embedded tilesets
     this.load.tilemapTiledJSON("store_map", "/maps/store_simple.tmj");
-    console.log("[BootScene] Loading store tilemap assets...");
+    Logger.log("Loading store tilemap assets...");
 
     this.load.spritesheet("player_walk", "/Walk.png", {
       frameWidth: 128,

@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vite cache
+.vite/
+
+# Bun cache
+.bun/
+
+# Local env files
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+Icon?
+
+# Misc
+*.log
+*.tmp
+
+# Public audio files
+# public/audio/
